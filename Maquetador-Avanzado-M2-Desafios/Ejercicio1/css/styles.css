@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+:root{
+    --font-roboto:'Roboto', sans-serif;
+    
+    /*font weight*/
+    --fw-regular:400;
+    --fw-black:900;
+
+    /*font size*/
+    --fs-18:24px;
+    --fs-90:120px;
+    --fs-28:37.33px;
+    --fs-128:170.66px;
+
+    /*color*/
+    --clr-primary:#0a2ff1;
+    --clr-secondary:#04146c;
+    --clr-terciary:#eff2ff;
+
+    /*width*/
+    --w-18:18%;
+    --w-20:20%;
+    --w-25:25%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*fonts usando font-face*/
+@font-face {
+    font-family: 'Coolvetica Regular';
+    src: url('../font/coolvetica-regular.otf');
+    font-style: normal;
+    font-weight: var(--fw-regular); 
+}
+
+/*width*/
+.w-18{
+    width: var(--w-18);
+}
+
+.w-20{
+    width: var(--w-20);
+}
+
+.w-25{
+    width: var(--w-25);
+}
+
+/*containers*/
+header{
+    margin-bottom: 60px;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*text-align: center;*/
+    padding: 1em;
+    background-color: var(--clr-terciary);    
+}
+
+h1{
+    font-family: 'Coolvetica Regular';
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-90);
+    color: var(--clr-primary);
+}
+
+h2{
+    font-family: var(--font-roboto);
+    font-weight: var(--fw-black);
+    font-size: var(--fs-28);
+    color: var(--clr-primary);
+    margin:20px 0 30px;
+}
+
+p{
+    font-family: var(--font-roboto);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-18);
+    color: var(--clr-secondary);
+    margin: 10px 0;
+}

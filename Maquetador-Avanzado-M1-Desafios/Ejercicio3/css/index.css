@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+:root{
+    --font-roboto:'Roboto', sans-serif;
+
+    /*font weight*/ 
+    --fw-light:300;
+    --fw-light-italic:300;
+    --fw-regular:400;
+    --fw-bold:700;
+    --fw-black:900;
+
+    /*font size*/        
+    --fs-18:24px;    
+    --fs-30:40px;
+    --fs-90:120px;
+
+    /*colors*/
+    --clr-primary:#0a2ff1;
+    --clr-secondary:#04146c;
+    --clr-terciary:#eff2ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*fonts usando font-face*/
+@font-face {
+    font-family: 'Coolvetica Regular';
+    src: url('../font/coolvetica-regular.otf');
+    font-style: normal;
+    font-weight: var(--fw-regular); 
+}
+
+/*encabezado-header*/
+#encabezado{
+    margin:0 6%;
+}
+
+#encabezado>h1{
+    font-family: 'Coolvetica Regular';
+    font-size: var(--fs-90);
+    color: var(--clr-primary);
+
+    padding: 10px 0 50px;
+}
+
+#encabezado>p{
+    font-family: var(--font-roboto);
+    font-weight: var(--fw-light);
+    font-size: var(--fs-30);
+    color: var(--clr-secondary);
+
+    padding-bottom: 40px;
+}
+
+#encabezado>p>strong{    
+    font-weight: var(--fw-bold);    
+}
+
+/*opiones-section*/
+#opiniones{
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+article{
+    width: 25%;
+    padding: 1em;
+    background-color: var(--clr-terciary);
+}
+
+article>img{
+    width: 30%;    
+    margin: 10px 0 20px;
+}
+
+article>img+p{
+    font-family: var(--font-roboto);
+    font-weight: var(--fw-light-italic);
+    font-style: italic;
+    font-size: var(--fs-18);
+    color: var(--clr-secondary);
+
+    margin:0 0 20px;
+}
+
+article>img+p+strong{
+    font-family: var(--font-roboto);
+    font-weight: var(--fw-black);    
+    font-size: var(--fs-18);
+    color: var(--clr-secondary);    
+}
+
+article>img+p+strong+p{
+    font-family: var(--font-roboto);
+    font-weight: var(--fw-regular);    
+    font-size: var(--fs-18);    
+
+    margin-top: 20px;
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+:root{
+    --font-mulish:'Mulish', sans-serif;
+
+    /*font weight*/
+    --fw-regular:400;
+    --fw-bold:700;
+    --fw-black:900;
+
+    /*font size*/
+    --fs-20:26.66px;
+    --fs-22:29.33px;
+    --fs-30:40px;
+    --fs-60:80px;
+
+    /*colors*/
+    --clr-primary:#0a2ff1;
+    --clr-secondary:#04146c;
+    --clr-white:#ffffff;
+
+    font-family: var(--font-mulish);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-30);
+    
+    color: var(--clr-primary);
+    margin: 20px 0;
+}
+
+h1{    
+    font-weight: var(--fw-black);
+    font-size: var(--fs-60);
+    
+    color: var(--clr-primary);
+    margin: 30px 0;
+}
+
+p{    
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-20);
+    
+    color: var(--clr-secondary);
+    margin: 40px 0;
+}
+
+p>strong{    
+    font-weight: var(--fw-bold);    
+}
+
+button{    
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-22);
+
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    width: 400px;
+    height: 70px;
+}
+
+body{
+    display: flex;
+}
+
+.w-40{
+    display: flex;
+    width: 40%;
+    background-image: url('../images/D2-E3-pattern.png');
+    background-size: 100%;
+    background-position-y: center;    
+    background-repeat: no-repeat;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-40>img{
+    width: 55%;
+    height: auto;
+    margin-left: 75px;
+    border: 5px solid var(--clr-primary);
+}
+

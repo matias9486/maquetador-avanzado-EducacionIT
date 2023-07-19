@@ -1,0 +1,121 @@
+/*
+https://lenguajecss.com/css/fuentes-y-tipografias/regla-font-face/
+https://www.kodetop.com/incluir-fuentes-en-css-con-font-face/
+*/
+:root{    
+    /*font size*/
+    --fs-30:40px;
+    --fs-90:120px;
+        
+    /*font weight*/
+    --fw-light:300;
+    --fw-regular:400;     
+    
+    /*colors*/
+    --clr-primary:#0a2ff1;
+    --clr-secondary:#04146c;
+    --clr-white:#ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*fonts usando font-face*/
+@font-face {
+    font-family: 'Coolvetica Regular';
+    src: url('../font/Coolvetica-Regular.otf');
+    font-style: normal;
+    font-weight: var(--fw-regular); 
+}
+
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../font/Roboto-Light.ttf');
+    font-style: normal;    
+    font-weight: var(--fw-light); 
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../font/Roboto-Regular.ttf');
+    font-style: normal;    
+    font-weight: var(--fw-regular); 
+}
+
+/*font size*/
+.fs-30{
+    font-size: var(--fs-30);
+}
+
+.fs-90{
+    font-size: var(--fs-90);
+}
+
+/*font family*/
+.coolvetica-Regular{
+    font-family: 'Coolvetica Regular';
+}
+
+.roboto-Light{
+    font-family: 'Roboto Light';
+}
+
+.roboto-Regular{
+    font-family: 'Roboto Regular';
+}
+
+/*text color*/
+.text-primary{
+    color: var(--clr-primary)
+}
+
+.text-secondary{
+    color: var(--clr-secondary)
+}
+
+/*width*/
+.w-65{
+    width: 65%;
+}
+
+/*padding*/
+.py-30{
+    padding: 30px 0;    
+}
+
+/*margin*/
+.my-10{
+    margin: 10px 0;    
+}
+
+
+/*container*/
+.container{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;    
+}
+
+/*buttons*/
+.blue-button{
+    display: block;    
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+
+    border: 3px solid var(--clr-primary);
+    width: 38%;
+}
+
+.white-button{
+    display: block;    
+    color: var(--clr-secondary);
+    background-color: var(--clr-white);
+
+    border: 3px solid var(--clr-primary);
+    width: 38%;
+}
